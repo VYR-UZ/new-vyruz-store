@@ -1,0 +1,10 @@
+<img (load)="imgLoad()" (error)="imgError()" [src]="img" *ngIf="img; else elseImg">
+
+<ng-template #elseImg>
+  <!--Renderiza el atributo con el propertyBiding-->
+  <img [src]="imgDefault" alt="">
+</ng-template>
+
+<!---
+<h3>{{ counter }}</h3>
+-->

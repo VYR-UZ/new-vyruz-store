@@ -1,0 +1,8 @@
+<p>Cantidad: {{ myShopingCart.length }}</p>
+<p>Total: ${{ totalCart }} MXN</p>
+<div class="products-list--grid">
+  <app-product [product]="product" *ngFor="let product of products" (addedProduct)="addToShopingCart($event)"></app-product>
+  <!-- * Indicamos que cada producto que se agregue se escuche
+       * Se agrega event para capturar
+  -->
+</div>
