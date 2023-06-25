@@ -11,6 +11,8 @@ import { ProductsService } from '../../services/products.service';
 })
 export class ProductsListComponent implements OnInit {
 
+  date = new Date();
+
   //array del carrito de compras
   myShopingCart: Product[] = []
 
