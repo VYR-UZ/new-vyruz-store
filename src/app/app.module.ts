@@ -15,6 +15,7 @@ import { registerLocaleData } from '@angular/common';
 import { ReversePipe } from './pipes/reverse.pipe';
 import { TimeAgoPipe } from './pipes/time-ago.pipe';
 import { ChangeVolcalNumberPipe } from './pipes/change-volcal-number.pipe';
+import { HighLightDirective } from './directives/high-light.directive';
 registerLocaleData(localeEs, 'es');
 
 @NgModule({
@@ -26,7 +27,8 @@ registerLocaleData(localeEs, 'es');
     HeaderComponent,
     ReversePipe,
     TimeAgoPipe,
-    ChangeVolcalNumberPipe
+    ChangeVolcalNumberPipe,
+    HighLightDirective
   ],
   imports: [
     BrowserModule,
