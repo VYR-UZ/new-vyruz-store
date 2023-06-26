@@ -14,6 +14,7 @@ import localeEs from  '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { ReversePipe } from './pipes/reverse.pipe';
 import { TimeAgoPipe } from './pipes/time-ago.pipe';
+import { ChangeVolcalNumberPipe } from './pipes/change-volcal-number.pipe';
 registerLocaleData(localeEs, 'es');
 
 @NgModule({
@@ -24,7 +25,8 @@ registerLocaleData(localeEs, 'es');
     ProductsListComponent,
     HeaderComponent,
     ReversePipe,
-    TimeAgoPipe
+    TimeAgoPipe,
+    ChangeVolcalNumberPipe
   ],
   imports: [
     BrowserModule,
